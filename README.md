@@ -22,15 +22,15 @@
             ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260U22059.jpg"]
         ])
 ###    4.Implementation delegate
-        func bannerViewDidClick(_ index: Int, model: [String : Any]) {
-            //do what you want
-            print("点击了第\(index)个，对应的model为\(model)")
-        }
+    func bannerViewDidClick(_ index: Int, model: [String : Any]) {
+        //do what you want
+        print("点击了第\(index)个，对应的model为\(model)")
+    }
 ###    5.Reload datasource
-        vBanner.reloadBanner([
-                ["image": "http://pic.qiantucdn.com/58pic/11/31/58/97p58PICV26.jpg"],
-                ["image": "http://pic27.nipic.com/20130319/10415779_103704478000_2.jpg"],
-                ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260G01561.jpg"],
-                ["image": "http://imgsrc.baidu.com/imgad/pic/item/83025aafa40f4bfb281dbe70094f78f0f63618c0.jpg"],
-                ])
-##  End
+    vBanner.reloadBanner([
+        ["image": "http://pic.qiantucdn.com/58pic/11/31/58/97p58PICV26.jpg"],
+        ["image": "http://pic27.nipic.com/20130319/10415779_103704478000_2.jpg"],
+        ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260G01561.jpg"],
+        ["image": "http://imgsrc.baidu.com/imgad/pic/item/83025aafa40f4bfb281dbe70094f78f0f63618c0.jpg"],
+        ])
+##  End thanks
