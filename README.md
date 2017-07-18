@@ -4,6 +4,7 @@
 ##  Requirements
 * iOS8.0 or later
 * Xcode8 or later
+* Swift3.0 or later
 ------
 ##  Supported Data Formats
 *   Local image name
