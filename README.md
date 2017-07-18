@@ -2,8 +2,8 @@
 ##  Learning how to use github's readme & practice my first time readme.
         CQBanner is a lightweight banner open source library
 ##  Requirements
-*   iOS8.0 or later
-*   Xcode8 or later
+*       iOS8.0 or later
+*       Xcode8 or later
 ------
 ##  Supported Data Formats
 *   Local image name
