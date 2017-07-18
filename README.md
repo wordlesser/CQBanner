@@ -7,11 +7,13 @@
 * Swift3.0 or later
 ------
 ##  Supported Data Formats
-*   Local image name
-*   Net image url
+* Local image name
+* Net image url
+* When your project has SDWebImage, it will use it first， otherwise will use system's network
 
 ------
 ##  How To Use
+### 0.Drag CQBannerView into your project
 ### 1.Create bannerView
     let vBanner = CQBannerView(frame: CGRect(x: 20, y: 100, width: self.view.bounds.size.width-40, height: 100))
 ###    2.Set delegate
