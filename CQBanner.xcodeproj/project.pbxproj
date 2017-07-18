@@ -12,6 +12,8 @@
 		FBE339281F1E016800D76637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE339261F1E016800D76637 /* Main.storyboard */; };
 		FBE3392A1F1E016800D76637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE339291F1E016800D76637 /* Assets.xcassets */; };
 		FBE3392D1F1E016800D76637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3392B1F1E016800D76637 /* LaunchScreen.storyboard */; };
+		FBE339351F1E018C00D76637 /* CQBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE339341F1E018C00D76637 /* CQBannerView.swift */; };
+		FBE339371F1E07A500D76637 /* banner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBE339361F1E07A500D76637 /* banner@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FBE339291F1E016800D76637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBE3392C1F1E016800D76637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBE3392E1F1E016800D76637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE339341F1E018C00D76637 /* CQBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CQBannerView.swift; sourceTree = "<group>"; };
+		FBE339361F1E07A500D76637 /* banner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		FBE339211F1E016800D76637 /* CQBanner */ = {
 			isa = PBXGroup;
 			children = (
+				FBE339361F1E07A500D76637 /* banner@3x.png */,
 				FBE339221F1E016800D76637 /* AppDelegate.swift */,
 				FBE339241F1E016800D76637 /* ViewController.swift */,
+				FBE339341F1E018C00D76637 /* CQBannerView.swift */,
 				FBE339261F1E016800D76637 /* Main.storyboard */,
 				FBE339291F1E016800D76637 /* Assets.xcassets */,
 				FBE3392B1F1E016800D76637 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE3392D1F1E016800D76637 /* LaunchScreen.storyboard in Resources */,
+				FBE339371F1E07A500D76637 /* banner@3x.png in Resources */,
 				FBE3392A1F1E016800D76637 /* Assets.xcassets in Resources */,
 				FBE339281F1E016800D76637 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE339251F1E016800D76637 /* ViewController.swift in Sources */,
+				FBE339351F1E018C00D76637 /* CQBannerView.swift in Sources */,
 				FBE339231F1E016800D76637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +272,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E657N4MDZF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CQBanner/SDWebImage",
+				);
 				INFOPLIST_FILE = CQBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leholady.CQBanner;
@@ -277,6 +289,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E657N4MDZF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CQBanner/SDWebImage",
+				);
 				INFOPLIST_FILE = CQBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leholady.CQBanner;
