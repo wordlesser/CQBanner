@@ -43,13 +43,19 @@ class CQBannerView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        self.setupView()
     }
+    
+    
     
     deinit {
         self.deinitTimer()
     }
-    
+    override func layoutSubviews() {
+        vCollection.frame = self.bounds
+        self.vCollection.reloadData()
+    }
     private func setupView() {
         self.backgroundColor = UIColor.white
         
@@ -177,7 +183,7 @@ class CQBannerCell: UICollectionViewCell {
         ivImage = UIImageView(frame: self.bounds)
         self.contentView.addSubview(ivImage)
     }
-    
+        
     func fillData(_ indexPath: IndexPath, model: [String: Any]) {
         let image = model["image"] as? String ?? ""
         if image.contains("http://") || image.contains("https://") {

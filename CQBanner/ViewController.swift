@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, CQBannerViewDelegate {
     var vBanner: CQBannerView!
+    @IBOutlet weak var vBannerXIB: CQBannerView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,9 +20,15 @@ class ViewController: UIViewController, CQBannerViewDelegate {
         vBanner.delegate = self
         vBanner.reloadBanner([
                 ["image": "banner"],
-                ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260U22059.jpg"]
+                ["image": "https://pic.qiantucdn.com/58pic/11/31/58/97p58PICV26.jpg"]
             ])
         
+        vBannerXIB.delegate = self
+        vBannerXIB.reloadBanner([
+            ["image": "banner"],
+            ["image": "http://img01.taopic.com/170817/240476-1FQG014448.jpg"]
+            ])
+
         let btnReload = UIButton(frame: CGRect(x: 100, y: 300, width: 100, height: 60))
         btnReload.setTitle("刷新", for: UIControlState.normal)
         btnReload.backgroundColor = UIColor.brown
@@ -41,6 +48,13 @@ class ViewController: UIViewController, CQBannerViewDelegate {
                 ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260G01561.jpg"],
                 ["image": "http://imgsrc.baidu.com/imgad/pic/item/83025aafa40f4bfb281dbe70094f78f0f63618c0.jpg"],
             ])
+        vBannerXIB.reloadBanner([
+            ["image": "http://pic.qiantucdn.com/58pic/11/31/58/97p58PICV26.jpg"],
+            ["image": "http://pic27.nipic.com/20130319/10415779_103704478000_2.jpg"],
+            ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260G01561.jpg"],
+            ["image": "http://imgsrc.baidu.com/imgad/pic/item/83025aafa40f4bfb281dbe70094f78f0f63618c0.jpg"],
+            ])
+
     }
     
     //MARK: CQBannerViewDelegate

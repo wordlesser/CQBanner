@@ -320,6 +320,7 @@
 				FBE339331F1E016800D76637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
