@@ -35,4 +35,4 @@
         ["image": "http://img.taopic.com/uploads/allimg/140326/235113-1403260G01561.jpg"],
         ["image": "http://imgsrc.baidu.com/imgad/pic/item/83025aafa40f4bfb281dbe70094f78f0f63618c0.jpg"],
         ])
-##  End thanks
+##  If you feel better, please give me a star
